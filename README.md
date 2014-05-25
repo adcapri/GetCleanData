@@ -17,3 +17,21 @@ Extracts only the measurements on the mean and standard deviation for each measu
 Uses descriptive activity names to name the activities in the data set
 Appropriately labels the data set with descriptive activity names. 
 Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
+
+Project: 
+============
+1. The R script reads all the data from the text files and stores them in a set of variables.
+
+2. The training sets are then merged with its corresponding testing set.
+
+3. The features list is them loading into a variable and used to provide label names for the merged X columns.
+
+4. The columns that calculate mean and standard deviation of features are extracted from the new X data set and stored in a new data set. 
+
+5. The y data set is changed so that the fields are changed to the corresponding activity names in the activity labels data set.
+
+6. This new extracted X data set is merged with the subject and activity data sets to form one large data set. 
+
+7. Then the mean of each column of the new extracted data set is grouped based on subject and activity. 
+
+8. This is the clean data set, "cleanData.txt", that is submitted. 
